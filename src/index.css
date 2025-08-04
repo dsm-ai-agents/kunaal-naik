@@ -143,17 +143,31 @@ All colors MUST be HSL.
     box-shadow: var(--glow-yellow);
   }
 
-  /* Pulse animation for CTA */
+  /* Heartbeat animation for CTA */
   .pulse-glow {
-    animation: pulse-glow 2s infinite;
+    animation: heartbeat-glow 2.5s infinite;
   }
 
-  @keyframes pulse-glow {
+  @keyframes heartbeat-glow {
     0%, 100% {
-      box-shadow: 0 0 5px hsl(var(--neon-yellow) / 0.5);
+      box-shadow: 0 0 5px hsl(var(--neon-yellow) / 0.4);
+      transform: scale(1);
     }
-    50% {
-      box-shadow: 0 0 20px hsl(var(--neon-yellow) / 0.8), 0 0 30px hsl(var(--neon-yellow) / 0.6);
+    14% {
+      box-shadow: 0 0 15px hsl(var(--neon-yellow) / 0.7), 0 0 25px hsl(var(--neon-yellow) / 0.5);
+      transform: scale(1.05);
+    }
+    28% {
+      box-shadow: 0 0 5px hsl(var(--neon-yellow) / 0.4);
+      transform: scale(1);
+    }
+    42% {
+      box-shadow: 0 0 15px hsl(var(--neon-yellow) / 0.7), 0 0 25px hsl(var(--neon-yellow) / 0.5);
+      transform: scale(1.05);
+    }
+    70% {
+      box-shadow: 0 0 5px hsl(var(--neon-yellow) / 0.4);
+      transform: scale(1);
     }
   }
 

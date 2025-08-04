@@ -2,8 +2,8 @@ import { Zap, Linkedin, Youtube, Twitter, Mail } from "lucide-react";
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Youtube, href: "#", label: "YouTube" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/kunaal-naik/", label: "LinkedIn" },
+    { icon: Youtube, href: "https://www.youtube.com/KunaalNaik", label: "YouTube" },
     { icon: Twitter, href: "#", label: "Twitter" },
     { icon: Mail, href: "#", label: "Email" }
   ];

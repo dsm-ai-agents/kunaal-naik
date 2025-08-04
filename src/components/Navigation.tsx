@@ -43,7 +43,11 @@ const Navigation = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="neon-outline" size="sm">
+            <Button 
+              variant="neon-outline" 
+              size="sm"
+              onClick={() => window.open('https://tidycal.com/kunaalnaik/ai-agent', '_blank')}
+            >
               Book Strategy Call
             </Button>
           </div>
@@ -75,7 +79,12 @@ const Navigation = () => {
                   {item.label}
                 </a>
               ))}
-              <Button variant="neon-outline" size="sm" className="w-fit mt-4">
+              <Button 
+                variant="neon-outline" 
+                size="sm" 
+                className="w-fit mt-4"
+                onClick={() => window.open('https://tidycal.com/kunaalnaik/ai-agent', '_blank')}
+              >
                 Book Strategy Call
               </Button>
             </div>

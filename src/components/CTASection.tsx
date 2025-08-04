@@ -40,7 +40,11 @@ const CTASection = () => {
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Book a 1-on-1 strategy session to discuss your AI transformation roadmap
             </p>
-            <Button variant="neon" className="w-full group-hover:scale-105 transition-transform duration-300">
+            <Button 
+              variant="neon" 
+              className="w-full group-hover:scale-105 transition-transform duration-300"
+              onClick={() => window.open('https://tidycal.com/kunaalnaik/ai-agent', '_blank')}
+            >
               Book Session
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
@@ -57,7 +61,11 @@ const CTASection = () => {
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Connect with 10,000+ AI professionals in Data Science Masterminds
             </p>
-            <Button variant="neon-blue" className="w-full group-hover:scale-105 transition-transform duration-300">
+            <Button 
+              variant="neon-blue" 
+              className="w-full group-hover:scale-105 transition-transform duration-300"
+              onClick={() => window.open('https://datasciencemasterminds.com/', '_blank')}
+            >
               Join Now
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
@@ -102,6 +110,7 @@ const CTASection = () => {
                   variant="neon" 
                   size="lg" 
                   className="text-xl px-12 py-4 pulse-glow font-bold"
+                  onClick={() => window.open('https://tidycal.com/kunaalnaik/ai-agent', '_blank')}
                 >
                   Start Your Transformation
                   <ArrowRight className="w-6 h-6 ml-2" />

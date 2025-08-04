@@ -72,6 +72,7 @@ const HeroSection = () => {
             variant="neon" 
             size="lg" 
             className="text-lg px-8 py-4 pulse-glow"
+            onClick={() => window.open('https://datasciencemasterminds.com/', '_blank')}
           >
             Start Your Agentic Journey
             <ArrowRight className="w-5 h-5 ml-2" />
@@ -81,6 +82,7 @@ const HeroSection = () => {
             variant="neon-outline" 
             size="lg" 
             className="text-lg px-8 py-4"
+            onClick={() => window.open('https://www.youtube.com/watch?v=JTNNR9uvKPo', '_blank')}
           >
             Watch My TEDx Talk
           </Button>
