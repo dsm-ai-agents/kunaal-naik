@@ -39,8 +39,33 @@ const AboutSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Professional photo */}
+          <div className="order-2 lg:order-1">
+            <div className="relative max-w-md mx-auto lg:mx-0">
+              {/* Glowing border effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-neon-yellow via-neon-blue to-neon-purple rounded-2xl blur-xl opacity-30 animate-pulse"></div>
+              
+              {/* Image container */}
+              <div className="relative bg-card/50 backdrop-blur-sm border border-neon-yellow/20 rounded-2xl p-2 hover:border-neon-yellow/40 transition-all duration-300">
+                <img 
+                  src="/lovable-uploads/13241e3a-4afa-40e1-bd84-0113455bbadf.png"
+                  alt="Kunaal Naik - AI, Data & Tech Strategist"
+                  className="w-full h-auto rounded-xl object-cover"
+                />
+                
+                {/* Overlay gradient */}
+                <div className="absolute inset-2 rounded-xl bg-gradient-to-t from-background/20 via-transparent to-transparent pointer-events-none"></div>
+              </div>
+              
+              {/* Floating elements around the photo */}
+              <div className="absolute -top-4 -right-4 w-8 h-8 bg-neon-yellow/20 rounded-full animate-pulse"></div>
+              <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-neon-blue/20 rounded-full animate-pulse delay-1000"></div>
+              <div className="absolute top-1/2 -left-6 w-4 h-4 bg-neon-purple/20 rounded-full animate-pulse delay-2000"></div>
+            </div>
+          </div>
+
           {/* Story content */}
-          <div className="space-y-8">
+          <div className="space-y-8 order-1 lg:order-2">
             <div className="prose prose-lg text-foreground/90 max-w-none">
               <p className="text-xl leading-relaxed">
                 Kunaal Naik stands at the forefront of the AI revolution, with over{" "}
@@ -75,7 +100,7 @@ const AboutSection = () => {
           </div>
 
           {/* Achievement cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 order-3 lg:col-span-2">
             {achievements.map((achievement, index) => (
               <div 
                 key={index}
